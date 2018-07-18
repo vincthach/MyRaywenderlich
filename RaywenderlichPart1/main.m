@@ -10,13 +10,11 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int guess = 10;
-        bool isSuccess = true;
-        float percent = 0.5f;
-        double tax = 0.9f;
-        char *name = "Nguyen Ngoc Thach";
-        NSString *fullName = @"Nguyen Ngoc Thach";
-        NSLog(@"Your name: %c", name);
+        NSLog(@"Please inter a word:");
+        char * cstring;
+        scanf("%s", &cstring);
+        NSString *inputString = [NSString stringWithCString:&cstring encoding:1];
+        NSLog(@"You enter the word: %@", inputString);
     }
     return 0;
 }

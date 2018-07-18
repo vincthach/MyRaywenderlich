@@ -10,8 +10,13 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        int guess = 10;
+        bool isSuccess = true;
+        float percent = 0.5f;
+        double tax = 0.9f;
+        char *name = "Nguyen Ngoc Thach";
+        NSString *fullName = @"Nguyen Ngoc Thach";
+        NSLog(@"Your name: %c", name);
     }
     return 0;
 }
